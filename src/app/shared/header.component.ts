@@ -1,0 +1,6 @@
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
+@Component({ selector: 'bsg-header', standalone: true, imports: [RouterLink, RouterLinkActive], template: `
+<header class="site-header"><a class="brand" routerLink="/" aria-label="BSGroup home"><span class="brand-mark">BS</span><span>BSGroup</span></a><nav class="desktop-nav" aria-label="Main navigation"><a routerLink="/about" routerLinkActive="active">About</a><a routerLink="/services" routerLinkActive="active">Services</a><a routerLink="/products" routerLinkActive="active">Products</a><a routerLink="/ventures" routerLinkActive="active">Ventures</a><a routerLink="/industries" routerLinkActive="active">Industries</a><a routerLink="/insights" routerLinkActive="active">Insights</a></nav><a class="header-cta" routerLink="/contact">Start a conversation <span>↗</span></a><details class="mobile-menu"><summary aria-label="Open navigation">Menu</summary><nav aria-label="Mobile navigation"><a routerLink="/about">About</a><a routerLink="/services">Services</a><a routerLink="/products">Products</a><a routerLink="/ventures">Ventures</a><a routerLink="/industries">Industries</a><a routerLink="/contact">Contact</a></nav></details></header>` })
+export class HeaderComponent {}

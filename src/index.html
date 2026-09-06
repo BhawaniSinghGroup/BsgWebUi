@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bhawani Singh Group | Technology, Products & Ventures</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bhawani Singh Group builds technology solutions, digital products and businesses that solve meaningful problems and create lasting value.">
+  <meta name="theme-color" content="#101315">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhawani Singh Group">
+  <meta property="og:title" content="Bhawani Singh Group | Technology, Products & Ventures">
+  <meta property="og:description" content="Building technology that solves meaningful problems and creates lasting value.">
+  <meta property="og:url" content="https://bhawanisinghgroup.com/">
+  <link rel="canonical" href="https://bhawanisinghgroup.com/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var redirect = params.get('redirect');
+
+      if (redirect && redirect.charAt(0) === '/') {
+        var remaining = new URLSearchParams(params);
+        remaining.delete('redirect');
+
+        var query = remaining.toString();
+        var target = redirect + (query ? '?' + query : '') + window.location.hash;
+
+        window.history.replaceState(null, '', target);
+      }
+    })();
+  </script>
+</head>
+<body><bsg-root></bsg-root></body>
+</html>

@@ -1,0 +1,4 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+@Component({ selector: 'bsg-footer', standalone: true, imports: [RouterLink], template: `<footer><div class="footer-top"><div><a class="brand" routerLink="/"><span class="brand-mark">BS</span><span>BSGroup</span></a><p class="footer-statement">Building a better tomorrow<br>through meaningful technology.</p></div><div class="footer-links"><div><strong>Explore</strong><a routerLink="/about">About</a><a routerLink="/services">Services</a><a routerLink="/products">Products</a><a routerLink="/ventures">Ventures</a></div><div><strong>Connect</strong><a routerLink="/contact">Start a conversation</a><a href="mailto:info@bhawanisinghgroup.com">Email BSG</a></div></div></div><div class="footer-bottom"><span>© {{ year }} Bhawani Singh Group</span><span>Innovation beyond boundaries.</span></div></footer>` })
+export class FooterComponent { year = new Date().getFullYear(); }
