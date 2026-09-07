@@ -4,3 +4,4 @@
 /* Shared identity assets */
 .brand{display:flex;align-items:center;flex:none}.brand-logo{display:block;width:auto;height:48px;max-width:220px;object-fit:contain}
 @media(max-width:800px){.brand-logo{height:40px;max-width:180px}}
+.phone-link{display:block;width:max-content;margin-top:12px;border-bottom:1px solid var(--ink);padding-bottom:5px;font-weight:700}.phone-link span{color:var(--gold)}.treefy-intro{max-width:720px;margin:0 auto;padding:45px 0 100px}.treefy-intro h2{font-size:clamp(62px,9vw,120px);color:#2f614b;margin-bottom:0}.treefy-leaf{display:grid;place-items:center;width:70px;height:70px;border-radius:50%;background:#dcebdc;color:#2f614b;font-size:31px;margin-bottom:26px}.treefy-tagline{font:28px/1.2 var(--serif);margin:12px 0 30px;color:#2f614b}.treefy-intro>p:not(.eyebrow):not(.treefy-tagline){font-size:18px;color:var(--muted);max-width:630px}.treefy-intro .button{margin-top:18px}
